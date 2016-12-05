@@ -1,0 +1,9 @@
+header
+    .container
+        a(href="#") 
+            img(src="images/akyildiz-muhendislik-logo.png" alt="akyıldız mühendislik logo" class="logo")
+        include nav.pug
+        +myNav('hideOnMobile')
+button(onclick='closeMobileMenu();' class="closeMenuButton" id="closeMenuButton") 
+    i.fa.fa-times
+    | KAPAT

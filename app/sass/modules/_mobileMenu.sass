@@ -1,0 +1,38 @@
+#mobileMenu
+    display: none
+    position: fixed
+    top: 0
+    left: 0
+    right: 100px
+    bottom: 0
+    background: white
+    z-index: 1040
+    border-right: 2px solid $darkerGray
+    nav 
+        ul 
+            li 
+                border-bottom: 1px solid $darkerGray
+                    
+                &:hover a
+                    color: $nightBlack
+                    left: 10px
+                a
+                    position: relative
+                    padding-left: 15px
+                    text-decoration: none
+                    color: $coolBlack
+                    line-height: 2em
+                    font-size: 1em
+                    letter-spacing: 0.01em
+                    line-height: 3.3em
+                    left: 0
+                    transition: 0.7s left
+                    img
+                        vertical-align: middle
+                        width: 18px
+                        margin-right: 5px
+                        margin-top: -3px
+            li.active
+                background: $standardGray
+                a 
+                    color $nightBlack

@@ -1,0 +1,44 @@
+body
+    border-top: 5px solid $akyildizRed
+    font-family: 'Roboto Condensed', sans-serif
+    font-size: 16px
+    text-rendering: optimizeLegibility !important
+    -webkit-font-smoothing: antialiased !important
+    -moz-osx-font-smoothing: grayscale !important
+    padding-top: $fixed-top-menu-size
+
+    @media all and (max-width: $middleScreen)
+        padding-top: $fixed-top-menu-size-mobile
+
+.container
+    display: block
+    width: 1170px
+    margin: 0 auto
+    padding: 0 15px
+    box-sizing: border-box
+    
+    @media all and (max-width: $bigScreen)
+        width: $middleScreen
+    
+    @media all and (max-width: $middleScreen)
+        width: 100%
+        padding: 0
+
+.clearfix
+    float: none
+    clear: both
+
+.hideOnMobile
+    display: inline
+
+    @media all and(max-width: $middleScreen)
+        display: none
+    
+.hideOnDesktop
+    display: none
+
+    @media all and(max-width: $middleScreen)
+        display: inline
+
+.hide
+    display: none

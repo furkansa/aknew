@@ -1,0 +1,32 @@
+.bottomMobileMenu
+    width: 100%
+    position: fixed
+    bottom: 0
+    left: 0
+    right: 0
+    background: white
+    z-index: 1040
+    border-top: 1px solid $darkerGray
+    padding: 15px 0
+    text-align: center
+    nav 
+        ul
+            width: 100%
+            
+            li
+                box-sizing: border-box
+                float: left
+
+                width: 33.3%
+                border-right: 1px solid $darkerGray
+                
+                &:last-of-type
+                    border-right: none
+
+                a
+                    display: block
+                    text-decoration: none
+                    color: $coolBlack
+                    i
+                        display: block
+                        margin-bottom: 5px

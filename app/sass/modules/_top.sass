@@ -1,0 +1,79 @@
+header
+    padding: 20px 0
+    width: 100%
+    position: fixed
+    top: 0
+    left: 0
+    box-sizing: border-box
+
+    @media all and (max-width: $middleScreen)
+        text-align: center
+        padding: 15px 0
+
+    .logo
+        transition: all 0.7s ease-out
+        &:hover
+            transform: scale(1.05)
+
+        @media all and (max-width: $middleScreen)
+            width: 150px
+
+    nav
+        float: right
+        margin-top: 60px
+        ul
+            li
+                display: inline
+                list-style: none
+                position: relative
+                margin-right: 18px
+
+                &:hover:after , &.active:after
+                    width: 100%
+
+                &:after
+                    transition: 0.7s width ease-out
+                    content: ''
+                    position: absolute
+                    left: 0
+                    bottom: -3px
+                    width: 0
+                    border-bottom: 1px solid $devilGray
+                    background: black
+
+                a
+                    text-decoration: none
+                    letter-spacing: 0.025em
+                    font-weight: 400
+                    font-size: 0.95em
+                    color: $coolBlack
+                    transition: 0.7s color ease-out
+
+                    &:hover
+                        color: $nightBlack
+
+                    img
+                        vertical-align: middle
+                        width: 18px
+                        margin-right: 8px
+                        margin-top: -4px
+.closeMenuButton
+    display: none
+    position: absolute
+    top: 80px
+    right: 15px
+    border: none
+    padding: 12px 10px
+    background: $akyildizRed
+    color: white
+    font-weight: 700
+    font-family: 'Roboto'
+    outline: none
+    cursor: pointer
+    z-index: 1040
+    
+    i 
+        margin-right: 5px
+
+    &:hover
+        background: #bb171e
